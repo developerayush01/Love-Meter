@@ -1,0 +1,72 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body
+{
+    height: 100vh;
+    position: relative;
+    z-index: 10;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(5px);
+    background-image: url("pexels-alleksana-6478830.jpg");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+.container
+{
+    font-family: "Raleway", sans-serif;
+    color: #FFD700;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  font-optical-sizing: auto;
+  background: rgba(0, 0, 0, 0.3);
+  font-weight: 900;
+  font-style: normal;
+  border-radius: 15px;
+}
+.check {
+    background-color: #B22222;
+    color: #FFFFFF;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.check:hover {
+    background-color: #8B0000; 
+}
+.alert
+{
+    position: absolute;
+    top: 50;
+    left: 50;
+    transform: scale(2);
+    border: 1px solid black;
+    font-size: medium;
+    font-weight: bold;
+    background-color: white;
+    color: black;
+    display: flex;
+    align-items: center;
+    display: none;
+    z-index: 999;
+}
+.close
+{
+    border: 1px solid gray;
+    color: black;
+}
+.close:hover
+{
+    background-color: purple;
+    transition: 0.5s ease-in-out;
+}
